@@ -1,7 +1,9 @@
-const express = require("express");
-const ngrok = require("@ngrok/ngrok");
-const crypto = require("crypto");
-require("dotenv").config();
+import express from "express";
+import ngrok from "@ngrok/ngrok";
+import crypto from "crypto";
+import dotenv from "dotenv";
+
+dotenv.config();
 
 // ! IMPORTANT: Make sure to set the environment variables in the .env file before running the server
 const chargilyApiSecretKey = process.env.CHARGILY_SECRET_KEY;
